@@ -6,7 +6,7 @@ const { PORT = 9070 } = process.env;
 
 app.get('/', (req, res) => {
     console.log('foo');
-    pm2.describe('testPm2app', (err, data) => {
+    pm2.describe('YiffBot', (err, data) => {
         if (err) {
             res.status(500).end();
         }
